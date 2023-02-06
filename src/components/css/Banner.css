@@ -1,0 +1,37 @@
+/* banner section CSS start */
+.bannerSection {
+    background-image: url(../images/tzort-home-banner.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bannerSection:after {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FFFFFF 35%, #FFFFFF00 80%);
+    opacity: 0.75;
+    content: '';
+    z-index: -1;
+}
+.aboutBannerSection {
+    background-image: url(../images/about-banner.jpg);
+}
+.communityBannerSection {
+    background-image: url(../images/community-bg.jpg);
+}
+.testimonialBannerSection {
+    background-image: url(../images/Testimonial-Banner-Image.jpg);
+}
+.communityFeeBannerSection{
+    background-image: url(../images/community-banner.jpg);
+}
+/* banner section CSS end */

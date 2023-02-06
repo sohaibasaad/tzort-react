@@ -1,0 +1,133 @@
+/* footer CSS start */
+footer {
+    background-color: #303038;
+    padding: 70px 0 0 0;
+}
+
+.footer_logo img {
+    width: 200px;
+}
+
+.footer_anchor_list ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.5s all ease;
+    font-family: "Work Sans", arial;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.footer_anchor_list ul li a:hover {
+    color: #0164B2;
+}
+
+.footer_anchor_list ul {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer_anchor_list ul li:before {
+    position: absolute;
+    content: '\f105';
+    font-family: "Font Awesome 5 Pro";
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.footer_anchor_list.footer_anchor_list_info ul li:before {
+    display: none;
+}
+
+.footer_anchor_list ul li {
+    position: relative;
+    width: max-content;
+}
+
+.footer_anchor_list ul li a i {
+    margin-right: 15px;
+}
+
+.social_icons ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.social_icons ul li a {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 5px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #0164B2;
+    transition: 0.5s all ease;
+}
+
+.social_icons ul li a:hover {
+    background: #0164B2;
+    color: #fff;
+}
+
+.footer_anchor_list.footer_anchor_list_info ul li {
+    width: 100%;
+}
+
+.footer_anchor_list.footer_anchor_list_info ul li a {
+    padding-left: 0;
+}
+
+.footer_separator {
+    position: relative;
+}
+
+.footer_separator::before {
+    position: absolute;
+    content: '';
+    width: 1.5px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #E4E3DF45;
+}
+
+.footer_separator:nth-last-child(1)::before {
+    display: none;
+}
+
+.copyright {
+    background: #000;
+    margin-top: 40px;
+}
+
+.copyright_text p.para a {
+    transition: 0.5s all ease;
+}
+
+.copyright_text p.para a:hover {
+    color: #0164B2 !important;
+}
+
+/* footer CSS end */
+
+@media (max-width: 992px) {
+
+    .footer_separator::before {
+        display: none;
+    }
+}

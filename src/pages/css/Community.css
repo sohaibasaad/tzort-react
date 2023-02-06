@@ -1,0 +1,43 @@
+/* community CSS start */
+.meet_team_section {
+    background-color: #F5F4F9;
+    padding-bottom: 75px;
+}
+
+.card_team {
+    background: #fff;
+    border-radius: 12px;
+}
+
+.contentBox {
+    padding: 60px 70px 60px 70px;
+}
+
+.card_team img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.providing_service_section {
+    padding-bottom: 75px;
+}
+
+.meet_team_section {
+    padding-bottom: 75px;
+}
+
+.card_team.with_border {
+    border: 1px solid #F5F4F9;
+}
+
+/* community CSS end */
+
+@media (max-width: 992px) {
+    .img_accomodation img {
+        width: 100%;
+    }
+    .contentBox {
+        padding: 35px 45px 35px 45px;
+    }
+}

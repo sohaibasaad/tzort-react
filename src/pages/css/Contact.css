@@ -1,0 +1,69 @@
+/* contact CSS start */
+.contactSection {
+    height: calc(95vh + 105px);
+    display: flex;
+    align-items: center;
+}
+
+.contactInfo span {
+    font-family: "Work Sans", arial;
+    font-size: 18px;
+}
+
+.contactInfo span a {
+    color: #0164B2;
+}
+
+.contactInfo span a:hover {
+    text-decoration: none;
+}
+
+.custom_input {
+    background-color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 16px;
+    min-height: 47px;
+    padding: 6px 16px;
+    border: 1px solid #818a91;
+    color: #373a3c;
+    transition: all .3s;
+}
+
+textarea.custom_input {
+    resize: none;
+    height: 105px;
+}
+
+.custom_input::placeholder {
+    color: #697882;
+}
+
+.custom_input::-webkit-input-placeholder {
+    /* Edge */
+    color: #697882;
+}
+
+.custom_input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #697882;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.custom_input::-webkit-outer-spin-button,
+.custom_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.custom_input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* contact CSS end */
+
+@media (max-width: 992px) {
+    .contactSection {
+        height: calc(100vh + 190px);
+    }
+}

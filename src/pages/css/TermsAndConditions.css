@@ -1,0 +1,31 @@
+/* terms and conditions CSS start */
+.terms_content_section{
+    padding-top: 130px;
+    padding-bottom: 75px;
+}
+.terms_list_counter ul{
+    list-style: none;
+}
+.terms_list_counter ul li{
+    position: relative;
+}
+.terms_list_counter ul li:before{
+    counter-increment: my-list-counter;
+    content: counter(my-list-counter)".";
+    position: absolute;
+    left: -15px;
+    font-weight: 500;
+}
+.terms_list_counter ul li {
+    padding-left: 15px;
+}
+.terms_list_counter.privacy_counter ul li:before{
+    font-weight: 400;
+}
+.table_privacy tbody tr td, .table_privacy tbody tr th{
+    padding: 15px;
+}
+.table_privacy tbody tr td {
+    width: 50%;
+}
+/* terms and conditions CSS end */

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    counter-reset: my-list-counter;
+}
+::selection {
+    color: #fff;
+    background: #1782D4;
+  }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1782d49f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1782D4;
+}
+
+.main_heading h1 {
+  color: #303038;
+  font-family: "Work Sans", arial;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+p.bold_para {
+  color: #303038;
+  font-family: "Work Sans", arial;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+p.para {
+  color: #303038;
+  font-family: "Work Sans", arial;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .card_body{
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 40px !important;
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .mainHeader.collapse {
+        background: #0164b1;
+        margin-top: 15px;
+    }
+
+    .mainHeader.collapse ul li a {
+        color: #fff;
+    }
+
+    .mainHeader.collapse ul li a::before {
+        display: none;
+    }
+
+    header .mainHeader.collapse ul li a:hover {
+        color: #0164b1;
+    }
+
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+    }
+
+    .collapse.mainHeader:not(.show) {
+        display: none !important;
+    }
+
+    .bannerSection {
+        background-position: center left;
+    }
+
+    .img_accomodation img {
+        /* height: 50vh; */
+        width: 100%;
+    }
+
+    .trusted_resort_section .trusted_resort_section_bg {
+        padding: 130px 15px 130px 15px;
+    }
+
+    .guranteed_section_bg {
+        padding: 25px;
+    }
+
+    .guranteed_about_section_bg {
+        padding: 25px;
+    }
+
+    .footer_separator::before {
+        display: none;
+    }
+
+    .contentBox {
+        padding: 35px 45px 35px 45px;
+    }
+
+    .reviewListContainer {
+        column-count: 2;
+    }
+    .showMobile{
+        display: block;
+    }
+    .contactSection {
+        height: calc(100vh + 190px);
+    }
+    .reviews_slider_box {
+        min-height: auto;
+    }
+    .blog_details_list ul {
+        display: block;
+    }
+    .blog_details_list ul li:first-child{
+        margin-left: 15px;
+    }
+    .blog_details_list ul li:first-child:before{
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 35px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .association_images ul {
+        display: block;
+        text-align: center;
+    }
+
+    .association_images ul li {
+        margin: 25px 0;
+    }
+
+    .reviewListContainer {
+        column-count: 1;
+    }
+    .card_body{
+        min-height: 200px;
+    }
+    .social_icon_listing_blog ul li {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,156 @@
+/* header CSS start */
+.logo {
+    width: 140px;
+}
+
+.custom_header nav {
+    padding: 20px 0px;
+}
+
+header.custom_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header.custom_header.bg-white {
+    border-bottom: 1px solid #F5F4F9;
+}
+
+.navbar-toggler span i {
+    transition: 0.5s all ease;
+}
+
+header .mainHeader ul li {
+    padding: 0 12px;
+}
+
+header .mainHeader ul li a {
+    font-family: "Lato", arial;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+header .mainHeader ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transition: 0.5s all ease;
+    opacity: 0;
+}
+
+header .mainHeader ul li a.active:before {
+    opacity: 1;
+}
+
+header .mainHeader ul li a:hover {
+    color: #0164b2;
+}
+
+header .mainHeader ul li a:hover:before {
+    opacity: 1;
+    background: #0164b2;
+}
+
+.showMobile {
+    display: none !important;
+}
+
+.nav__submenu {
+    display: none;
+}
+
+.nav__menu-item:hover .nav__submenu {
+    display: block;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav__menu-item:hover .nav__submenu {
+    display: block;
+}
+
+.nav__submenu {
+    font-weight: 300;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: max-content;
+    background-color: #0164b2;
+    list-style: none;
+    padding-left: 0;
+    border: 1px solid #0164b2;
+}
+
+.nav__submenu-item a{
+    color: #fff !important;
+}
+
+.nav__submenu-item:hover {
+    background: #fff;
+    color: #0164b2 !important;
+}
+.nav__submenu-item:hover a{
+    color: #0164b2 !important;
+}
+
+.nav__submenu-item:hover a:before {
+    display: none;
+}
+.nav__menu-item:hover a:before{
+    display: none;
+}
+.nav-item.nav__menu-item:before {
+    content: '\f0d7';
+    position: absolute;
+    right: 0;
+    font-family: "Font Awesome 5 Pro";
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+/* header CSS end */
+
+@media (max-width: 992px) {
+    .mainHeader.collapse {
+        background: #0164b1;
+        margin-top: 15px;
+    }
+
+    .mainHeader.collapse ul li a {
+        color: #fff;
+    }
+
+    .mainHeader.collapse ul li a::before {
+        display: none;
+    }
+
+    header .mainHeader.collapse ul li a:hover {
+        color: #0164b1;
+    }
+
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+    }
+
+    .collapse.mainHeader:not(.show) {
+        display: none !important;
+    }
+}

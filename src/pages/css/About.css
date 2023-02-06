@@ -1,0 +1,43 @@
+/* about CSS start */
+
+.img_accomodation.img_accomodation_about img {
+    width: 100%;
+    height: auto;
+}
+
+/* guranteed CSS start */
+.guranteed_about_section {
+    padding: 0 0 125px 0;
+}
+
+.guranteed_about_section_bg {
+    background-color: transparent;
+    padding: 60px;
+    border-radius: 12px;
+    border: 1px solid #E4E4E4
+}
+
+/* guranteed CSS end */
+
+/* vacation deserve CSS start */
+.vacation_deserve_section {
+    background-color: #1782D4;
+    padding: 100px 0px 110px 0px;
+}
+
+.custom_btn.bg-white {
+    color: #1782D4;
+}
+
+/* vacation deserve CSS end */
+/* about CSS end */
+
+@media (max-width: 992px) {
+    .img_accomodation img {
+        width: 100%;
+    }
+
+    .guranteed_about_section_bg {
+        padding: 25px;
+    }
+}

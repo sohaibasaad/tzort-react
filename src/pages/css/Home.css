@@ -1,0 +1,296 @@
+/* online accomodation CSS start */
+.onlineAccomodationSection {
+    padding: 125px 0px 125px 0px;
+}
+
+.img_accomodation img {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main_heading h2 {
+    font-family: "Work Sans", arial;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #303038;
+}
+
+/* online accomodation CSS end */
+
+/* why use CSS start */
+.whyUseSection {
+    background-color: #F6F6F6;
+}
+
+.box_whyuse {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+    padding: 40px 30px 75px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box_whyuse .icon_box svg {
+    fill: #1782D4;
+    width: 80px;
+    height: 80px;
+}
+
+.main_heading h3 {
+    color: #303038;
+    font-family: "Work Sans", arial;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+/* why use CSS end */
+
+/* trusted resort CSS start */
+.trusted_resort_section {
+    padding: 125px 0px 125px 0px;
+}
+
+.trusted_resort_section .trusted_resort_section_bg {
+    background-image: url(../images/Trusted-resort.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 130px 130px 130px 130px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.trusted_resort_section_bg:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.75;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #F5F4F9 55%, #FFFFFF00 100%);
+    opacity: 0.76;
+    z-index: -1;
+}
+
+/* trusted resort CSS end */
+
+/* travel resort CSS start */
+.travel_card .travel_card_img img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px 12px 12px 12px;
+}
+
+/* travel resort CSS end */
+
+/* review section CSS start */
+.reviews_section {
+    background-color: #F6F6F6;
+    padding-bottom: 50px;
+}
+
+.reviews_slider_box {
+    border-radius: 12px;
+    background: #fff;
+    padding: 30px 20px;
+    margin: 0 10px;
+    /* min-height: 420px; */
+}
+
+.reviews_slider_box .reviews_slider_box_info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review_rating ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.reviews_slider_contact {
+    margin-left: 20px;
+}
+
+.reviews_slider_img img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.review_rating ul li i {
+    color: #FFCD51;
+}
+
+.review_location span {
+    color: #697882;
+    font-size: 12.5px;
+    font-weight: 400;
+    font-family: "Work Sans", arial;
+}
+.reviews_section ul.slick-dots li button::before {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.reviews_section ul.slick-dots li.slick-active button::before {
+    color: #1782D4;
+}
+section.reviews_section button.slick-arrow {
+    display: none !important;
+}
+
+/* review section CSS end */
+
+/* guranteed CSS start */
+.guranteed_section {
+    padding: 125px 0;
+}
+
+.guranteed_section_bg {
+    background-color: #1782D4;
+    padding: 60px 60px 60px 60px;
+    border-radius: 12px;
+}
+
+/* guranteed CSS end */
+
+/* ready to travel CSS start */
+.ready_to_travel_section {
+    padding: 0 0 125px 0;
+}
+
+.custom_btn {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #1782D4;
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 50%);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1782D4;
+    border-radius: 50px;
+    font-family: "Lato", arial;
+    font-size: 20px;
+    width: max-content;
+    padding: 0 40px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all ease;
+}
+
+.custom_btn:hover {
+    background-color: #fff;
+    color: #1782D4;
+    transform: scale(1.1);
+}
+
+.association_images ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.association_images ul li img {
+    width: 200px;
+}
+
+/* ready to travel CSS end */
+
+/* FQS CSS start */
+.faqs_section {
+    background-color: #F6F6F6;
+    padding-bottom: 40px;
+}
+
+.custom_accordion h2.accordion-header button {
+    color: #303038;
+    font-family: "Work Sans", arial;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.3em;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px !important;
+}
+
+.custom_accordion .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #efefef !important;
+    border-radius: 12px !important;
+    background: transparent !important;
+}
+
+.custom_accordion .accordion-button:not(.collapsed) {
+    background: #1782D4 !important;
+    color: #fff !important;
+}
+
+.custom_accordion .accordion-button:not(.collapsed):after {
+    filter: invert(1) brightness(11);
+}
+
+.custom_accordion .accordion-item .accordion-body p.para a {
+    text-decoration: underline;
+    color: #0164B2;
+    transition: 0.5s all ease;
+}
+
+.custom_accordion .accordion-item .accordion-body p.para a:hover {
+    text-decoration: none !important;
+}
+
+/* FQS CSS end */
+
+
+@media (max-width: 992px) {
+    .bannerSection {
+        background-position: center left;
+    }
+
+    .img_accomodation img {
+        /* height: 50vh; */
+        width: 100%;
+    }
+
+    .trusted_resort_section .trusted_resort_section_bg {
+        padding: 130px 15px 130px 15px;
+    }
+
+    .guranteed_section_bg {
+        padding: 25px;
+    }
+
+    .guranteed_about_section_bg {
+        padding: 25px;
+    }
+    .showMobile{
+        display: block;
+    }
+    .reviews_slider_box {
+        min-height: auto;
+    }
+}
