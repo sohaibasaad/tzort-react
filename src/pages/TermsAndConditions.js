@@ -103,14 +103,14 @@ function TermsAndConditions() {
                             location they wish to visit and to review travel prohibitions, warnings, announcements and
                             advisories issued by the United States Government before booking. Information may be found
                             at
-                            <a href="https://www.state.gov/" className="anchor d-inline-block">www.state.gov</a>
-                            <a href="https://www.tsa.gov/" className="anchor d-inline-block">www.tsa.gov</a>
+                            <a href="https://www.state.gov/" className="anchor d-inline-block ms-2 me-2">www.state.gov</a>,
+                            <a href="https://www.tsa.gov/" className="anchor d-inline-block me-2">www.tsa.gov</a>,
                             <a href="https://www.transportation.gov/"
-                                className="anchor d-inline-block">www.transportation.gov</a>
-                            <a href="https://www.faa.gov/" className="anchor d-inline-block">www.faa.gov</a>
-                            <a href="https://www.cdc.gov/" className="anchor d-inline-block">www.cdc.gov</a>
+                                className="anchor d-inline-block me-2">www.transportation.gov</a>,
+                            <a href="https://www.faa.gov/" className="anchor d-inline-block me-2">www.faa.gov</a>,
+                            <a href="https://www.cdc.gov/" className="anchor d-inline-block me-2">www.cdc.gov</a>,
                             <a href="https://home.treasury.gov/policy-issues/office-of-foreign-assets-control-sanctions-programs-and-information"
-                                className="anchor d-inline-block">www.treas.gov/ofac</a>
+                                className="anchor d-inline-block me-2">www.treas.gov/ofac</a>,
                             <a href="javascript:;" className="anchor d-inline-block">www.customs.gov</a>
                         </p>
                         <p className="para my-3">While we do take certain measures with a goal to assist users to avoid

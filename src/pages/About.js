@@ -87,7 +87,7 @@ function About() {
 
                             </div>
                             <div>
-                                <a href="index.html" className="custom_btn m-0 mt-5">Meer Our Team</a>
+                                <NavLink to="/community" className="custom_btn m-0 mt-5">Meer Our Team</NavLink>
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 mt-5">

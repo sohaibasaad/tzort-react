@@ -51,16 +51,35 @@ function Footer() {
                             </div>
                             <div className="social_icons my-4">
                                 <ul>
-                                    <li><a href="https://www.facebook.com/people/TZort/100071396814777/"><i
-                                        className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/Tzort3"><i className="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/tzort-travel-resort-style-44863022a/"><i
-                                        className="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCCIegdjz_56ajNX2wyI3fPg"><i
-                                        className="fab fa-youtube"></i></a></li>
-                                    <li><a href="https://www.instagram.com/travelwithtzort/"><i
-                                        className="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.pinterest.com/tzorttravel/"><i className="fab fa-pinterest"></i></a>
+                                    <li>
+                                        <a href="https://www.facebook.com/people/TZort/100071396814777/">
+                                            <i className="fab fa-facebook-f" target="_blank"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Tzort3" target="_blank">
+                                            <i className="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/tzort-travel-resort-style-44863022a/" target="_blank">
+                                            <i className="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCCIegdjz_56ajNX2wyI3fPg" target="_blank">
+                                            <i className="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/travelwithtzort/" target="_blank">
+                                            <i className="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.pinterest.com/tzorttravel/">
+                                            <i className="fab fa-pinterest"></i>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>

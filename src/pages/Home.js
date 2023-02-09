@@ -9,6 +9,7 @@ import travel3 from './images/travel-3.jpg';
 import travel4 from './images/travel-4.jpg';
 import Banner from '../components/Banner';
 import Reviews from '../components/Reviews';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
     return (
@@ -865,7 +866,7 @@ function Home() {
                                     <h3>Did We Answer Your Question?</h3>
                                 </div>
                                 <div className="my-4">
-                                    <a href="contact.html" className="custom_btn">I Have Another Question</a>
+                                    <NavLink to="/contact" className="custom_btn">I Have Another Question</NavLink>
                                 </div>
                             </div>
                         </div>

@@ -16,7 +16,7 @@ function Contact() {
                                     as
                                     possible.</p>
                                 <div className="contactInfo">
-                                    <span className=""><strong>Email:</strong> <a href="support@tzort.com">Support@Tzort.com</a></span>
+                                    <span className=""><strong>Email:</strong> <a href="mailto:support@tzort.com">Support@Tzort.com</a></span>
                                     <span className=" d-block my-3"><strong>Address:</strong>
                                         <p className="para w-50">201 W. Big Beaver Road Suite 500 Troy, MI 48084</p>
                                     </span>
