@@ -29,7 +29,7 @@ function App() {
         <Header />
         <ScrollToTop>
           <Routes>
-            <Route path="*" element={<Navigate to="/home" replace />} />
+            <Route path="*" element={<Navigate to="/tzort-react" replace />} />
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
