@@ -30,16 +30,16 @@ function App() {
         <ScrollToTop>
           <Routes>
             <Route path="*" element={<Navigate to="/tzort-react" replace />} />
-            <Route exact path="/home" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/community" element={<Community />} />
-            <Route exact path="/community-fee" element={<CommunityFee />} />
-            <Route exact path="/testimonials" element={<Testimonials />} />
-            <Route exact path="/blogs" element={<Blogs />} />
-            <Route exact path="/blog-details" element={<BlogDetails />} />
-            <Route exact path="/terms-and-conditions" element={<TermsAndConditions />} />
-            <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route exact path="tzort-react/home" element={<Home />} />
+            <Route exact path="tzort-react/about" element={<About />} />
+            <Route exact path="tzort-react/contact" element={<Contact />} />
+            <Route exact path="tzort-react/community" element={<Community />} />
+            <Route exact path="tzort-react/community-fee" element={<CommunityFee />} />
+            <Route exact path="tzort-react/testimonials" element={<Testimonials />} />
+            <Route exact path="tzort-react/blogs" element={<Blogs />} />
+            <Route exact path="tzort-react/blog-details" element={<BlogDetails />} />
+            <Route exact path="tzort-react/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route exact path="tzort-react/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </ScrollToTop>
         <Footer />
