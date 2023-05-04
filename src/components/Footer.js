@@ -1,3 +1,4 @@
+import React from "react";
 import Logo from './images/tzort-logo-white.png'
 import './css/Footer.css';
 import { NavLink } from 'react-router-dom';

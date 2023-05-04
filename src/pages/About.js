@@ -1,3 +1,5 @@
+
+import React from "react";
 import './css/About.css';
 import about1 from './images/about-1.jpg';
 import about2 from './images/about-2.jpg';
