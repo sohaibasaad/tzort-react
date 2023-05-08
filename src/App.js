@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import './App.css';
+import React, { useEffect } from 'react'
 import Header from "./components/Header";
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -19,10 +18,28 @@ import BlogDetails from './pages/BlogDetails';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
+import Button from './components/DownloadButton';
 
 function App() {
 
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (event) => {
+      event.preventDefault();
+
+      window.deferredPrompt = event;
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    };
+  }, []);
+
+
   return (
+    <div>
     <>
       <Router>
 
@@ -45,6 +62,9 @@ function App() {
         <Footer />
       </Router>
     </>
+    <Button />
+    </div>
+
   );
 }
 
