@@ -1,8 +1,9 @@
-const CACHE_NAME = 'my-cache-v1';
+const CACHE_NAME = 'my-cache-v2';
 const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
+  '/asset-manifest.json',
   // Add other URLs of static content to cache
 ];
 
