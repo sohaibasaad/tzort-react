@@ -4,12 +4,13 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Navigate,
+// } from "react-router-dom";
+import { Route, Navigate, Routes } from 'react-router-dom';
 import Community from './pages/Community';
 import CommunityFee from './pages/CommunityFee';
 import Testimonials from './pages/Testimonials';
@@ -40,12 +41,11 @@ function App() {
 
   return (
     <div>
-    <>
-      <Router>
+      <>
+        {/* <Router>
 
         <Header />
         <ScrollToTop>
-          <Routes>
             <Route path="*" element={<Navigate to="tzort-react/home" replace />} />
             <Route exact path="tzort-react/home" element={<Home />} />
             <Route exact path="tzort-react/about" element={<About />} />
@@ -57,12 +57,29 @@ function App() {
             <Route exact path="tzort-react/blog-details" element={<BlogDetails />} />
             <Route exact path="tzort-react/terms-and-conditions" element={<TermsAndConditions />} />
             <Route exact path="tzort-react/privacy-policy" element={<PrivacyPolicy />} />
+        </ScrollToTop>
+        <Footer />
+      </Router> */}
+
+        <Header />
+        <ScrollToTop>
+          <Routes>
+            <Route path="*" element={<Navigate to="/home" replace />} />
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/community" element={<Community />} />
+            <Route exact path="/community-fee" element={<CommunityFee />} />
+            <Route exact path="/testimonials" element={<Testimonials />} />
+            <Route exact path="/blogs" element={<Blogs />} />
+            <Route exact path="/blog-details" element={<BlogDetails />} />
+            <Route exact path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </ScrollToTop>
         <Footer />
-      </Router>
-    </>
-    <Button />
+      </>
+      <Button />
     </div>
 
   );
