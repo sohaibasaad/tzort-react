@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9ba720fcf0b5f29320ff",
+    "revision": "e7ad16dec0d9692c65e5",
     "url": "/tzort-react/static/css/main.f4215f09.chunk.css"
   },
   {
-    "revision": "9ba720fcf0b5f29320ff",
-    "url": "/tzort-react/static/js/main.9ba720fc.chunk.js"
+    "revision": "e7ad16dec0d9692c65e5",
+    "url": "/tzort-react/static/js/main.e7ad16de.chunk.js"
   },
   {
     "revision": "f543a40bef5e0ee902d6",
@@ -180,19 +180,19 @@ self.__precacheManifest = [
     "url": "/tzort-react/static/media/about-banner.e358d4a3.jpg"
   },
   {
-    "revision": "afc5a2f07963ae306054287980aef12e",
-    "url": "/tzort-react/static/media/community-bg.afc5a2f0.jpg"
-  },
-  {
     "revision": "0a761208d332bb7fa661e606bd385435",
     "url": "/tzort-react/static/media/Testimonial-Banner-Image.0a761208.jpg"
+  },
+  {
+    "revision": "afc5a2f07963ae306054287980aef12e",
+    "url": "/tzort-react/static/media/community-bg.afc5a2f0.jpg"
   },
   {
     "revision": "51f08d7c7fe0657cade3fe08bace1aa4",
     "url": "/tzort-react/static/media/community-banner.51f08d7c.jpg"
   },
   {
-    "revision": "d6dbe92ba7688f74f9f7a1cf18cb1f08",
+    "revision": "5a7e4d55297b41619fb36a0d72706a8c",
     "url": "/tzort-react/index.html"
   }
 ];

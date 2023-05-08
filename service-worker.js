@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tzort-react/precache-manifest.540f213b090c2e7c49c3f469bc9fce19.js"
+  "/tzort-react/precache-manifest.97a3dff6c3074f74f60ac8256284cf8b.js"
 );
 
 workbox.clientsClaim();

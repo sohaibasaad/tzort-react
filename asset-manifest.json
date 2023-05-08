@@ -1,7 +1,7 @@
 {
   "main.css": "/tzort-react/static/css/main.f4215f09.chunk.css",
-  "main.js": "/tzort-react/static/js/main.9ba720fc.chunk.js",
-  "main.js.map": "/tzort-react/static/js/main.9ba720fc.chunk.js.map",
+  "main.js": "/tzort-react/static/js/main.e7ad16de.chunk.js",
+  "main.js.map": "/tzort-react/static/js/main.e7ad16de.chunk.js.map",
   "static/js/1.f543a40b.chunk.js": "/tzort-react/static/js/1.f543a40b.chunk.js",
   "static/js/1.f543a40b.chunk.js.map": "/tzort-react/static/js/1.f543a40b.chunk.js.map",
   "static/js/2.01321172.chunk.js": "/tzort-react/static/js/2.01321172.chunk.js",
@@ -49,6 +49,6 @@
   "static/media/Banner.css": "/tzort-react/static/media/community-banner.51f08d7c.jpg",
   "static/css/main.f4215f09.chunk.css.map": "/tzort-react/static/css/main.f4215f09.chunk.css.map",
   "index.html": "/tzort-react/index.html",
-  "precache-manifest.540f213b090c2e7c49c3f469bc9fce19.js": "/tzort-react/precache-manifest.540f213b090c2e7c49c3f469bc9fce19.js",
+  "precache-manifest.97a3dff6c3074f74f60ac8256284cf8b.js": "/tzort-react/precache-manifest.97a3dff6c3074f74f60ac8256284cf8b.js",
   "service-worker.js": "/tzort-react/service-worker.js"
 }
