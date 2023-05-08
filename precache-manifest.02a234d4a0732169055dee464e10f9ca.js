@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "9f3e5db5d73344787107",
+    "revision": "9ba720fcf0b5f29320ff",
     "url": "/tzort-react/static/css/main.f4215f09.chunk.css"
   },
   {
-    "revision": "9f3e5db5d73344787107",
-    "url": "/tzort-react/static/js/main.9f3e5db5.chunk.js"
+    "revision": "9ba720fcf0b5f29320ff",
+    "url": "/tzort-react/static/js/main.9ba720fc.chunk.js"
   },
   {
     "revision": "f543a40bef5e0ee902d6",
     "url": "/tzort-react/static/js/1.f543a40b.chunk.js"
   },
   {
-    "revision": "b108d993ae343824802d",
-    "url": "/tzort-react/static/js/2.b108d993.chunk.js"
+    "revision": "01321172bbc15f313454",
+    "url": "/tzort-react/static/js/2.01321172.chunk.js"
   },
   {
     "revision": "47a41a597b185616006e",
@@ -192,7 +192,7 @@ self.__precacheManifest = [
     "url": "/tzort-react/static/media/community-banner.51f08d7c.jpg"
   },
   {
-    "revision": "fb4295f27432abd4cd653489417700f3",
+    "revision": "d6dbe92ba7688f74f9f7a1cf18cb1f08",
     "url": "/tzort-react/index.html"
   }
 ];
