@@ -1,32 +1,21 @@
-const CACHE_NAME = 'my-react-app-cache-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/static/css/main.css',
-  '/static/js/main.js',
-  '/apple-touch-icon.png',
-  '/favicon-192x192.png'
-];
-
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
+    caches.open('my-cache').then((cache) => {
+      return cache.addAll([
+        '/',
+        '/index.html',
+        '/app.js',
+        '/styles.css',
+        // Add other static assets you want to cache
+      ]);
+    })
   );
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-
-        return fetch(event.request);
-      })
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    })
   );
 });
