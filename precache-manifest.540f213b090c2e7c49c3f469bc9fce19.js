@@ -176,12 +176,12 @@ self.__precacheManifest = [
     "url": "/tzort-react/static/media/tzort-home-banner.f643580b.jpg"
   },
   {
-    "revision": "afc5a2f07963ae306054287980aef12e",
-    "url": "/tzort-react/static/media/community-bg.afc5a2f0.jpg"
-  },
-  {
     "revision": "e358d4a339ff4bea068962f7a1e1ac34",
     "url": "/tzort-react/static/media/about-banner.e358d4a3.jpg"
+  },
+  {
+    "revision": "afc5a2f07963ae306054287980aef12e",
+    "url": "/tzort-react/static/media/community-bg.afc5a2f0.jpg"
   },
   {
     "revision": "0a761208d332bb7fa661e606bd385435",
