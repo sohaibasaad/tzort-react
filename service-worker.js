@@ -1,47 +1,34 @@
-const CACHE_NAME = 'my-cache-v2';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/asset-manifest.json',
-  // Add other URLs of static content to cache
-];
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
 
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(urlsToCache))
-  );
-});
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        if (response) {
-          return response; // Cache hit, return response
-        }
-        
-        // Clone the request because it's a one-time-use stream
-        const fetchRequest = event.request.clone();
+importScripts(
+  "/tzort-react/precache-manifest.c5ac3ae2526c133a78ea89dfed018a49.js"
+);
 
-        return fetch(fetchRequest)
-          .then((response) => {
-            // Check if we received a valid response
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-            
-            // Clone the response because it's a one-time-use stream
-            const responseToCache = response.clone();
+workbox.clientsClaim();
 
-            caches.open(CACHE_NAME)
-              .then((cache) => {
-                cache.put(event.request, responseToCache); // Cache the fetched response
-              });
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-            return response;
-          });
-      })
-  );
+workbox.routing.registerNavigationRoute("/tzort-react/index.html", {
+  
+  blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
