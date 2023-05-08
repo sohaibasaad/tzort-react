@@ -3,6 +3,7 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
+  '/asset-manifest.json',
   // Add other URLs of static content to cache
 ];
 
