@@ -3,32 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as serviceWorker from './service-worker';
 
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js')
-    .then((registration) => {
-      console.log('Service Worker registered');
-    })
-    .catch((error) => {
-      console.log('Service Worker registration failed:', error);
-    });
-}
-
-// Check if the browser supports the Add to Home Screen prompt
 const isPWAInstallable = () => {
   return 'getInstalledRelatedApps' in navigator;
 };
 
-// Show the Add to Home Screen prompt
 const showInstallPrompt = () => {
   const handlePrompt = () => {
     deferredPrompt.prompt();
     deferredPrompt.userChoice.then((choiceResult) => {
       if (choiceResult.outcome === 'accepted') {
         console.log('User accepted the install prompt');
+        alert('User accepted the install prompt');
       } else {
         console.log('User dismissed the install prompt');
+        alert('User dismissed the install prompt');
       }
       deferredPrompt = null;
     });
@@ -39,14 +29,20 @@ const showInstallPrompt = () => {
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     deferredPrompt = event;
-    const installButton = (
-      <button onClick={handlePrompt}>Install App</button>
+
+    // Render a custom download button
+    const downloadButton = (
+      <button onClick={handlePrompt}>Download App</button>
     );
-    ReactDOM.render(installButton, document.getElementById('install-button'));
+    ReactDOM.render(downloadButton, document.getElementById('download-button'));
   });
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+if (isPWAInstallable()) {
+  showInstallPrompt();
+}
 
 root.render(
   <React.StrictMode>
@@ -54,12 +50,8 @@ root.render(
   </React.StrictMode>
 );
 
-// Check if the PWA is installable and show the install prompt
-if (isPWAInstallable()) {
-  showInstallPrompt();
-}
-
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+serviceWorker.register();
