@@ -21,6 +21,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
 import Button from './components/DownloadButton';
 
+import Firebase from './Firebase';
+
 function App() {
 
 

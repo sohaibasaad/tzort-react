@@ -17,6 +17,14 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+navigator.serviceWorker.register('/firebase-messaging-sw.js')
+  .then((registration) => {
+    // Service worker registration successful
+  })
+  .catch((error) => {
+    console.error('Service worker registration failed:', error);
+  });
+
 root.render(
   <React.StrictMode>
     <HashRouter>
