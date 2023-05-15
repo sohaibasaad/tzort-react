@@ -1,7 +1,7 @@
 {
   "main.css": "/tzort-react/static/css/main.37c5307c.chunk.css",
-  "main.js": "/tzort-react/static/js/main.21ac6e9e.chunk.js",
-  "main.js.map": "/tzort-react/static/js/main.21ac6e9e.chunk.js.map",
+  "main.js": "/tzort-react/static/js/main.caa48a8f.chunk.js",
+  "main.js.map": "/tzort-react/static/js/main.caa48a8f.chunk.js.map",
   "static/js/1.2832359a.chunk.js": "/tzort-react/static/js/1.2832359a.chunk.js",
   "static/js/1.2832359a.chunk.js.map": "/tzort-react/static/js/1.2832359a.chunk.js.map",
   "runtime~main.js": "/tzort-react/static/js/runtime~main.18705759.js",
@@ -44,9 +44,9 @@
   "static/media/video_thumbnail.jpg": "/tzort-react/static/media/video_thumbnail.8ce6ac36.jpg",
   "static/media/video_blog.mp4": "/tzort-react/static/media/video_blog.10f7c834.mp4",
   "static/media/Home.css": "/tzort-react/static/media/Trusted-resort.d1b5f889.jpg",
-  "static/media/Banner.css": "/tzort-react/static/media/Testimonial-Banner-Image.0a761208.jpg",
+  "static/media/Banner.css": "/tzort-react/static/media/community-banner.51f08d7c.jpg",
   "static/css/main.37c5307c.chunk.css.map": "/tzort-react/static/css/main.37c5307c.chunk.css.map",
   "index.html": "/tzort-react/index.html",
-  "precache-manifest.c5ac3ae2526c133a78ea89dfed018a49.js": "/tzort-react/precache-manifest.c5ac3ae2526c133a78ea89dfed018a49.js",
+  "precache-manifest.98c75b71391accc1a9c4e626bf03058c.js": "/tzort-react/precache-manifest.98c75b71391accc1a9c4e626bf03058c.js",
   "service-worker.js": "/tzort-react/service-worker.js"
 }
