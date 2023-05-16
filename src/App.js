@@ -19,27 +19,33 @@ import BlogDetails from './pages/BlogDetails';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
-import Button from './components/DownloadButton';
 
-import Firebase from './Firebase';
+import "./App.css"
+
+import { messaging } from "./firebase";
+import { getToken } from "firebase/messaging";
 
 function App() {
 
+  async function requestPermission() {
+    const permission = await Notification.requestPermission();
+    if (permission === "granted") {
+      // Generate Token
+      const token = await getToken(messaging, {
+        vapidKey:
+          "BMhqDLbrD7mpeAYK4oGtp8Xe8RLdxriUO0bHGCFfKNiyZfJ-jath8monnmy4LBy2PYKyhyl9ZJTk36VVFrUGUzM",
+      });
+      console.log("Token Gen", token);
+      // Send this token  to server ( db)
+    } else if (permission === "denied") {
+      alert("You denied for the notification");
+    }
+  }
 
   useEffect(() => {
-    const handleBeforeInstallPrompt = (event) => {
-      event.preventDefault();
-
-      window.deferredPrompt = event;
-    };
-
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    };
+    // Req user for notification permission
+    requestPermission();
   }, []);
-
 
   return (
     <div>
@@ -81,7 +87,6 @@ function App() {
         </ScrollToTop>
         <Footer />
       </>
-      <Button />
     </div>
 
   );
